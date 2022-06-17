@@ -1,0 +1,33 @@
+[
+    {
+        "model": "packs.Pack",
+        "pk": 1,
+        "fields": {
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "users.SubOrganization",
+        "pk": 1,
+        "fields": {
+            "name":"test_sub_org", 
+            "code":"tes_code",
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "subscriptions.Subscription",
+        "pk": 1,
+        "fields": {
+            "pack":1,
+            "sub_organization":1,
+            "starts_at":"2020-10-11 00:00:00+00:00",
+            "expires_at":"2025-10-11 00:00:00+00:00",
+            "file_set_meta_info":{},
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    }
+]

@@ -1,0 +1,56 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "File Set Meta Info",
+    "description": "Meta information related to a file set.",
+	"type": "array",
+	"items": {
+		"type": "object",
+		"properties": {
+			"name": {
+				"type": "string"
+			},
+			"field": {
+				"type": "string"
+			},
+			"field_type": {
+				"type": "string",
+				"enum": [
+					"CharField",
+					"DateTimeField",
+					"IntegerField"
+				]
+			},
+			"field_props": {
+				"type": "object",
+				"properties": {
+					"required": {
+						"type": "boolean"
+					},
+					"max_length": {
+						"type": "integer"
+					},
+					"allow_null": {
+						"type": "boolean"
+					}
+				},
+				"required": [
+					"required"
+				]
+			},
+			"associated_with_defects": {
+				"type": "boolean"
+			},
+			"is_filterable": {
+				"type": "boolean"
+			},
+			"field_ty pe": {
+				"type": "string"
+			}
+		},
+		"required": [
+			"name",
+			"field",
+			"field_props"
+		]
+	}
+}

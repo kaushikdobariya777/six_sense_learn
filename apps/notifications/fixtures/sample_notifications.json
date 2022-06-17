@@ -1,0 +1,141 @@
+[
+  {
+    "model": "notifications.notificationscenario",
+    "pk": 1,
+    "fields": {
+      "created_ts": "2021-12-24T05:33:49.633Z",
+      "updated_ts": "2021-12-24T05:33:49.634Z",
+      "created_by": null,
+      "updated_by": null,
+      "name": "low_automation_overall",
+      "title": "Auto-classification rate is less than expected.",
+      "description": "Auto-classification rate today is {auto_classified_percentage}%, {below_expected}% less than expected. For more details go to AI performance page.",
+      "notification_type": "WEB",
+      "navigation_link": null,
+      "priority": "Low"
+    }
+  },
+  {
+    "model": "notifications.notificationscenario",
+    "pk": 2,
+    "fields": {
+      "created_ts": "2021-12-24T05:38:57.630Z",
+      "updated_ts": "2021-12-24T05:38:57.630Z",
+      "created_by": null,
+      "updated_by": null,
+      "name": "low_automation_single_use_case",
+      "title": "Auto-classification rate for {use_case_name} is less than expected",
+      "description": "Auto-classification rate today is {auto_classified_percentage}%, {below_expected}% less than expected. For more details go to AI performance page.",
+      "notification_type": "WEB",
+      "navigation_link": "https://infineon.staging1.sixsense.ai/dashboard/1/ai-performance?use_case_id__in={use_case_ids}",
+      "priority": "Low"
+    }
+  },
+  {
+    "model": "notifications.notificationscenario",
+    "pk": 3,
+    "fields": {
+      "created_ts": "2021-12-24T05:43:08.147Z",
+      "updated_ts": "2021-12-24T05:43:08.147Z",
+      "created_by": null,
+      "updated_by": null,
+      "name": "low_automation_multiple_use_cases",
+      "title": "Auto-classification rate for {use_case_count} usecase is less than expected",
+      "description": "Auto-classification rate for Usecase {use_cases} is less than expected.",
+      "notification_type": "WEB",
+      "navigation_link": "https://infineon.staging1.sixsense.ai/dashboard/1/ai-performance?use_case_id__in={use_case_ids}",
+      "priority": "Low"
+    }
+  },
+  {
+    "model": "notifications.notificationscenario",
+    "pk": 4,
+    "fields": {
+      "created_ts": "2021-12-24T05:50:49.024Z",
+      "updated_ts": "2021-12-24T05:50:49.024Z",
+      "created_by": null,
+      "updated_by": null,
+      "name": "wafer_on_hold_more_than_2_hours",
+      "title": "Alert! Classify Wafer - {wafer_id}.",
+      "description": "Wafer- {wafer_id} waiting to be classified since 2 hours.",
+      "notification_type": "WEB",
+      "navigation_link": null,
+      "priority": "Low"
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 1,
+    "fields": {
+      "created_ts": "2021-12-24T05:36:08.392Z",
+      "updated_ts": "2021-12-24T05:36:08.392Z",
+      "created_by": null,
+      "updated_by": null,
+      "scenario": 1,
+      "parameters": {
+        "below_expected": 4,
+        "auto_classified_percentage": 90
+      },
+      "is_read": false
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 2,
+    "fields": {
+      "created_ts": "2021-12-24T05:41:21.356Z",
+      "updated_ts": "2021-12-24T05:41:21.356Z",
+      "created_by": null,
+      "updated_by": null,
+      "scenario": 2,
+      "parameters": {
+        "use_case_ids": [
+          1,
+          2
+        ],
+        "use_case_name": "Test usecase",
+        "below_expected": 4,
+        "auto_classified_percentage": 90
+      },
+      "is_read": false
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 3,
+    "fields": {
+      "created_ts": "2021-12-24T05:44:15.314Z",
+      "updated_ts": "2021-12-24T05:44:15.314Z",
+      "created_by": null,
+      "updated_by": null,
+      "scenario": 3,
+      "parameters": {
+        "use_cases": [
+          "U1",
+          "U2"
+        ],
+        "use_case_ids": [
+          1,
+          2
+        ],
+        "use_case_count": 2
+      },
+      "is_read": false
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 4,
+    "fields": {
+      "created_ts": "2021-12-24T05:51:03.504Z",
+      "updated_ts": "2021-12-24T05:51:03.504Z",
+      "created_by": null,
+      "updated_by": null,
+      "scenario": 4,
+      "parameters": {
+        "wafer_id": 2
+      },
+      "is_read": false
+    }
+  }
+]

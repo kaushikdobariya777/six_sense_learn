@@ -1,0 +1,392 @@
+[
+    {
+        "model": "user_auth.user",
+        "pk": 1,
+        "fields": {
+            "created_ts": "2020-07-20T15:26:38.649Z",
+            "updated_ts": "2020-07-20T15:26:38.649Z",
+            "created_by": null,
+            "updated_by": null,
+            "password": "pbkdf2_sha256$150000$cmwu7eyfZuFR$D1o9gYSlsKOiDiyZUdToUZ1eM+x04gLcrSv+kfRtV+4=",
+            "last_login": "2020-07-20T15:27:00.439Z",
+            "is_superuser": true,
+            "email": "rupesh@sixsense.ai",
+            "first_name": "",
+            "last_name": "",
+            "is_staff": true,
+            "phone": null,
+            "is_active": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.suborganization",
+        "pk": 1,
+        "fields": {
+            "created_ts": "2020-07-20T15:27:19.641Z",
+            "updated_ts": "2020-07-20T15:27:19.641Z",
+            "created_by": null,
+            "updated_by": null,
+            "name": "gf",
+            "code": "1",
+            "address": "3460  Hudson Street"
+        }
+    },
+    {
+        "model": "users.suborganization",
+        "pk": 2,
+        "fields": {
+            "created_ts": "2020-07-20T15:27:33.840Z",
+            "updated_ts": "2020-07-20T15:27:33.840Z",
+            "created_by": null,
+            "updated_by": null,
+            "name": "infinion",
+            "code": "2",
+            "address": "3460  Hudson Street"
+        }
+    },
+    {
+        "model": "packs.orgpack",
+        "pk": 1,
+        "fields": {
+            "created_ts": "2020-07-20T15:28:41.908Z",
+            "updated_ts": "2020-07-20T15:28:41.908Z",
+            "created_by": null,
+            "updated_by": null,
+            "pack": 1,
+            "sub_organization": 1
+        }
+    },
+    {
+        "model": "packs.orgpack",
+        "pk": 2,
+        "fields": {
+            "created_ts": "2020-07-20T15:28:51.795Z",
+            "updated_ts": "2020-07-20T15:28:51.795Z",
+            "created_by": null,
+            "updated_by": null,
+            "pack": 2,
+            "sub_organization": 1
+        }
+    },
+    {
+        "model": "packs.orgpack",
+        "pk": 3,
+        "fields": {
+            "created_ts": "2020-07-20T15:29:07.958Z",
+            "updated_ts": "2020-07-20T15:29:07.958Z",
+            "created_by": null,
+            "updated_by": null,
+            "pack": 4,
+            "sub_organization": 1
+        }
+    },
+    {
+        "model": "packs.orgpack",
+        "pk": 4,
+        "fields": {
+            "created_ts": "2020-07-20T15:29:16.657Z",
+            "updated_ts": "2020-07-20T15:29:16.657Z",
+            "created_by": null,
+            "updated_by": null,
+            "pack": 2,
+            "sub_organization": 2
+        }
+    },
+    {
+        "model": "packs.orgpack",
+        "pk": 5,
+        "fields": {
+            "created_ts": "2020-07-20T15:29:25.595Z",
+            "updated_ts": "2020-07-20T15:29:25.595Z",
+            "created_by": null,
+            "updated_by": null,
+            "pack": 3,
+            "sub_organization": 2
+        }
+    },
+    {
+        "model": "packs.pack",
+        "pk": 1,
+        "fields": {
+            "created_ts": "2020-07-20T15:27:52.711Z",
+            "updated_ts": "2020-07-20T15:27:52.711Z",
+            "created_by": null,
+            "updated_by": null,
+            "name": "model1",
+            "type": "Public",
+            "is_demo": false,
+            "is_active": true
+        }
+    },
+    {
+        "model": "packs.pack",
+        "pk": 2,
+        "fields": {
+            "created_ts": "2020-07-20T15:28:04.476Z",
+            "updated_ts": "2020-07-20T15:28:04.476Z",
+            "created_by": null,
+            "updated_by": null,
+            "name": "model2",
+            "type": "Public",
+            "is_demo": true,
+            "is_active": true
+        }
+    },
+    {
+        "model": "packs.pack",
+        "pk": 3,
+        "fields": {
+            "created_ts": "2020-07-20T15:28:14.279Z",
+            "updated_ts": "2020-07-20T15:28:14.279Z",
+            "created_by": null,
+            "updated_by": null,
+            "name": "model3",
+            "type": "Public",
+            "is_demo": false,
+            "is_active": true
+        }
+    },
+    {
+        "model": "packs.pack",
+        "pk": 4,
+        "fields": {
+            "created_ts": "2020-07-20T15:28:25.085Z",
+            "updated_ts": "2020-07-20T15:28:25.085Z",
+            "created_by": null,
+            "updated_by": null,
+            "name": "model4",
+            "type": "Public",
+            "is_demo": false,
+            "is_active": false
+        }
+    },
+    {
+        "model": "subscriptions.subscription",
+        "pk": 1,
+        "fields": {
+            "created_ts": "2020-07-20T15:29:55.122Z",
+            "updated_ts": "2020-07-20T15:29:55.122Z",
+            "created_by": null,
+            "updated_by": null,
+            "pack": 1,
+            "sub_organization": 1,
+            "expires_at": "2020-07-20T15:29:50Z",
+            "starts_at": "2020-07-20T15:29:52Z",
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "model": "subscriptions.subscription",
+        "pk": 2,
+        "fields": {
+            "created_ts": "2020-07-20T15:30:06.432Z",
+            "updated_ts": "2020-07-20T15:30:06.432Z",
+            "created_by": null,
+            "updated_by": null,
+            "pack": 4,
+            "sub_organization": 1,
+            "expires_at": "2020-07-20T15:30:01Z",
+            "starts_at": "2020-07-20T15:30:04Z",
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "model": "subscriptions.subscription",
+        "pk": 3,
+        "fields": {
+            "created_ts": "2020-07-20T15:30:28.128Z",
+            "updated_ts": "2020-07-20T15:30:28.128Z",
+            "created_by": null,
+            "updated_by": null,
+            "pack": 3,
+            "sub_organization": 2,
+            "expires_at": "2020-07-20T15:30:22Z",
+            "starts_at": "2020-07-20T15:30:25Z",
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2020-07-20T15:27:19.645Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "1",
+            "object_repr": "gf",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2020-07-20T15:27:33.844Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "2",
+            "object_repr": "infinion",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2020-07-20T15:27:52.714Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "1",
+            "object_repr": "Pack object (1)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2020-07-20T15:28:04.480Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "2",
+            "object_repr": "Pack object (2)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2020-07-20T15:28:14.284Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "3",
+            "object_repr": "Pack object (3)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2020-07-20T15:28:25.089Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "4",
+            "object_repr": "Pack object (4)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2020-07-20T15:28:41.911Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": "OrgPack object (1)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2020-07-20T15:28:51.799Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "2",
+            "object_repr": "OrgPack object (2)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2020-07-20T15:29:07.967Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "3",
+            "object_repr": "OrgPack object (3)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2020-07-20T15:29:16.669Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "4",
+            "object_repr": "OrgPack object (4)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2020-07-20T15:29:25.604Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "5",
+            "object_repr": "OrgPack object (5)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2020-07-20T15:29:55.125Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "1",
+            "object_repr": "Subscription object (1)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2020-07-20T15:30:06.435Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "2",
+            "object_repr": "Subscription object (2)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2020-07-20T15:30:28.131Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "3",
+            "object_repr": "Subscription object (3)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    }
+]

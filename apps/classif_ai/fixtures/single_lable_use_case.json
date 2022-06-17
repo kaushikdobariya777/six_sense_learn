@@ -1,0 +1,693 @@
+[
+    {
+        "model": "classif_ai.UseCase",
+        "pk": 1,
+        "fields": {
+            "name":"single-label-test-usecase-1",
+            "type":"CLASSIFICATION",
+            "subscription":1,
+            "classification_type":"SINGLE_LABEL",
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00",
+            "automation_conditions":{"threshold_percentage": 40}
+        }
+    },
+    {
+        "model": "classif_ai.UploadSession",
+        "pk": 1,
+        "fields": {
+            "name":"test-session-1", 
+            "subscription": 1, 
+            "use_case": 1,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.MlModel",
+        "pk": 1,
+        "fields": {
+            "name":"test-model-1",
+            "code":"test-code-1",
+            "version":1,
+            "status":"deployed_in_prod",
+            "is_stable": true,
+            "subscription": 1,
+            "use_case": 1,
+            "confidence_threshold":95.0,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.MlModel",
+        "pk": 2,
+        "fields": {
+            "name":"test-model-2",
+            "code":"test-code-2",
+            "version":1,
+            "status":"deployed_in_prod",
+            "is_stable": true,
+            "subscription": 1,
+            "use_case": 1,
+            "confidence_threshold":95.0,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.MlModel",
+        "pk": 3,
+        "fields": {
+            "name":"test-model-3",
+            "code":"test-code-3",
+            "version":1,
+            "status":"deployed_in_prod",
+            "is_stable": true,
+            "subscription": 1,
+            "use_case": 1,
+            "confidence_threshold":95.0,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.MlModel",
+        "pk": 4,
+        "fields": {
+            "name":"test-model-4",
+            "code":"test-code-4",
+            "version":1,
+            "status":"deployed_in_prod",
+            "is_stable": true,
+            "subscription": 1,
+            "use_case": 1,
+            "confidence_threshold":95.0,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.MlModel",
+        "pk": 5,
+        "fields": {
+            "name":"test-model-5",
+            "code":"test-code-5",
+            "version":1,
+            "status":"deployed_in_prod",
+            "is_stable": true,
+            "subscription": 1,
+            "use_case": 1,
+            "confidence_threshold":95.0,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.Defect",
+        "pk": 1,
+        "fields": {
+            "name": "defect-1",
+            "code":"defect-code-1",
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00",
+            "subscription":1
+        }
+    },
+    {
+        "model": "classif_ai.Defect",
+        "pk": 2,
+        "fields": {
+            "name": "defect-2",
+            "code":"defect-code-2",
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00",
+            "subscription":1
+        }
+    },
+    {
+        "model": "classif_ai.Defect",
+        "pk": 3,
+        "fields": {
+            "name": "defect-3",
+            "code":"defect-code-3",
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00",
+            "subscription":1
+        }
+    },
+    {
+        "model": "classif_ai.Defect",
+        "pk": 4,
+        "fields": {
+            "name": "defect-4",
+            "code":"defect-code-4",
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00",
+            "subscription":1
+        }
+    },
+    {
+        "model": "classif_ai.Defect",
+        "pk": 5,
+        "fields": {
+            "name": "defect-5",
+            "code":"defect-code-5",
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00",
+            "subscription":1
+        }
+    },
+    {
+        "model": "classif_ai.WaferMap",
+        "pk": 1,
+        "fields": {
+            "organization_wafer_id": "wafermap-1",
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.WaferMap",
+        "pk": 2,
+        "fields": {
+            "organization_wafer_id": "wafermap-2",
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+            
+        }
+    },
+    {
+        "model": "classif_ai.FileSet",
+        "pk": 1,
+        "fields": {
+            "upload_session": 1,
+            "subscription": 1,
+            "use_case":1,
+            "meta_info":{"tray_id": "abcd"},
+            "wafer": 1 ,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.File",
+        "pk": 1,
+        "fields": {
+            "file_set": 1,
+            "name": "test-file-name-1", 
+            "path": "test/test-path-1",
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.FileSet",
+        "pk": 2,
+        "fields": {
+            "upload_session": 1,
+            "subscription": 1,
+            "use_case":1,
+            "meta_info":{"tray_id": "abcd"},
+            "wafer": 1 ,
+            "created_ts":"2020-10-12 00:00:00+00:00",
+            "updated_ts":"2020-10-12 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.File",
+        "pk": 2,
+        "fields": {
+            "file_set": 2,
+            "name": "test-file-name-2", 
+            "path": "test/test-path-2",
+            "created_ts":"2020-10-12 00:00:00+00:00",
+            "updated_ts":"2020-10-12 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.FileSet",
+        "pk": 3,
+        "fields": {
+            "upload_session": 1,
+            "subscription": 1,
+            "use_case":1,
+            "meta_info":{"tray_id": "abcd"},
+            "wafer": 1 ,
+            "created_ts":"2020-10-13 00:00:00+00:00",
+            "updated_ts":"2020-10-13 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.File",
+        "pk": 3,
+        "fields": {
+            "file_set": 3,
+            "name": "test-file-name-3", 
+            "path": "test/test-path-3",
+            "created_ts":"2020-10-13 00:00:00+00:00",
+            "updated_ts":"2020-10-13 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.FileSet",
+        "pk": 4,
+        "fields": {
+            "upload_session": 1,
+            "subscription": 1,
+            "use_case":1,
+            "meta_info":{"tray_id": "abcd"},
+            "wafer": 1 ,
+            "created_ts":"2020-10-14 00:00:00+00:00",
+            "updated_ts":"2020-10-14 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.File",
+        "pk": 4,
+        "fields": {
+            "file_set": 4,
+            "name": "test-file-name-4", 
+            "path": "test/test-path-4",
+            "created_ts":"2020-10-14 00:00:00+00:00",
+            "updated_ts":"2020-10-14 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.FileSet",
+        "pk": 5,
+        "fields": {
+            "upload_session": 1,
+            "subscription": 1,
+            "use_case":1,
+            "meta_info":{"tray_id": "abcd"},
+            "wafer": 1 ,
+            "created_ts":"2020-10-15 00:00:00+00:00",
+            "updated_ts":"2020-10-15 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.File",
+        "pk": 5,
+        "fields": {
+            "file_set": 5,
+            "name": "test-file-name-5", 
+            "path": "test/test-path-5",
+            "created_ts":"2020-10-15 00:00:00+00:00",
+            "updated_ts":"2020-10-15 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.FileSet",
+        "pk": 6,
+        "fields": {
+            "upload_session": 1,
+            "subscription": 1,
+            "use_case":1,
+            "meta_info":{"tray_id": "abcd"},
+            "wafer": 1 ,
+            "created_ts":"2020-10-16 00:00:00+00:00",
+            "updated_ts":"2020-10-16 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.File",
+        "pk": 6,
+        "fields": {
+            "file_set": 6,
+            "name": "test-file-name-6", 
+            "path": "test/test-path-6",
+            "created_ts":"2020-10-16 00:00:00+00:00",
+            "updated_ts":"2020-10-16 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.FileSet",
+        "pk": 7,
+        "fields": {
+            "upload_session": 1,
+            "subscription": 1,
+            "use_case":1,
+            "meta_info":{"tray_id": "abcd"},
+            "wafer": 1 ,
+            "created_ts":"1900-10-17 00:00:00+00:00",
+            "updated_ts":"1900-10-17 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.File",
+        "pk": 7,
+        "fields": {
+            "file_set": 7,
+            "name": "test-file-name-7", 
+            "path": "test/test-path-7",
+            "created_ts":"1900-10-17 00:00:00+00:00",
+            "updated_ts":"1900-10-17 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.FileSet",
+        "pk": 8,
+        "fields": {
+            "upload_session": 1,
+            "subscription": 1,
+            "use_case":1,
+            "meta_info":{"tray_id": "abcd"},
+            "wafer": 2 ,
+            "created_ts":"2020-10-18 00:00:00+00:00",
+            "updated_ts":"2020-10-18 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.File",
+        "pk": 8,
+        "fields": {
+            "file_set": 8,
+            "name": "test-file-name-8", 
+            "path": "test/test-path-8",
+            "created_ts":"2020-10-18 00:00:00+00:00",
+            "updated_ts":"2020-10-18 00:00:00+00:00"
+        }
+    },
+
+    {
+        "model": "classif_ai.GTClassification",
+        "pk": 1,
+        "fields": {
+            "file": 1,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.GTClassificationDefect",
+        "pk": 1,
+        "fields": {
+            "classification": 1,
+            "defect": 1,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.ModelClassification",
+        "pk": 1,
+        "fields": {
+            "file": 1,
+            "ml_model": 1,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.ModelClassificationDefect",
+        "pk": 1,
+        "fields": {
+            "classification": 1,
+            "defect": 1,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00",
+            "confidence":96.0
+        }
+    },
+    {
+        "model": "classif_ai.GTClassification",
+        "pk": 2,
+        "fields": {
+            "file": 2,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.GTClassificationDefect",
+        "pk": 2,
+        "fields": {
+            "classification": 2,
+            "defect": 2,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.ModelClassification",
+        "pk": 2,
+        "fields": {
+            "file": 2,
+            "ml_model": 1,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.ModelClassificationDefect",
+        "pk": 2,
+        "fields": {
+            "classification": 2,
+            "defect": 3,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00",
+            "confidence":96.0
+        }
+    },
+    {
+        "model": "classif_ai.GTClassification",
+        "pk": 3,
+        "fields": {
+            "file": 3,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.GTClassificationDefect",
+        "pk": 3,
+        "fields": {
+            "classification": 3,
+            "defect": 3,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.ModelClassification",
+        "pk": 3,
+        "fields": {
+            "file": 3,
+            "ml_model": 1,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.ModelClassificationDefect",
+        "pk": 3,
+        "fields": {
+            "classification": 3,
+            "defect": 2,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00",
+            "confidence":96.0
+        }
+    },
+    {
+        "model": "classif_ai.GTClassification",
+        "pk": 4,
+        "fields": {
+            "file": 4,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.GTClassificationDefect",
+        "pk": 4,
+        "fields": {
+            "classification": 4,
+            "defect": 4,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.ModelClassification",
+        "pk": 4,
+        "fields": {
+            "file": 4,
+            "ml_model": 1,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.GTClassification",
+        "pk": 5,
+        "fields": {
+            "file": 5,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.ModelClassification",
+        "pk": 5,
+        "fields": {
+            "file": 5,
+            "ml_model": 1,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.ModelClassificationDefect",
+        "pk": 5,
+        "fields": {
+            "classification": 5,
+            "defect": 5,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00",
+            "confidence":96.0
+        }
+    },
+    {
+        "model": "classif_ai.GTClassification",
+        "pk": 6,
+        "fields": {
+            "file": 6,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.GTClassificationDefect",
+        "pk": 6,
+        "fields": {
+            "classification": 6,
+            "defect": 1,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.ModelClassification",
+        "pk": 6,
+        "fields": {
+            "file": 6,
+            "ml_model": 2,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.ModelClassificationDefect",
+        "pk": 6,
+        "fields": {
+            "classification": 6,
+            "defect": 1,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00",
+            "confidence":16.0
+        }
+    },
+    {
+        "model": "classif_ai.ModelClassification",
+        "pk": 7,
+        "fields": {
+            "file": 1,
+            "ml_model": 2,
+            "created_ts":"2020-10-12 00:00:00+00:00",
+            "updated_ts":"2020-10-12 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.ModelClassificationDefect",
+        "pk": 7,
+        "fields": {
+            "classification": 7,
+            "defect": 1,
+            "created_ts":"2020-10-12 00:00:00+00:00",
+            "updated_ts":"2020-10-12 00:00:00+00:00",
+            "confidence":96.0
+        }
+    },
+    {
+        "model": "classif_ai.GTClassification",
+        "pk": 7,
+        "fields": {
+            "file": 7,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.GTClassificationDefect",
+        "pk": 7,
+        "fields": {
+            "classification": 7,
+            "defect": 1,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.ModelClassification",
+        "pk": 7,
+        "fields": {
+            "file": 7,
+            "ml_model": 2,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.ModelClassificationDefect",
+        "pk": 7,
+        "fields": {
+            "classification": 7,
+            "defect": 1,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00",
+            "confidence":96.0
+        }
+    },
+    {
+        "model": "classif_ai.GTClassification",
+        "pk": 8,
+        "fields": {
+            "file": 8,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.GTClassificationDefect",
+        "pk": 8,
+        "fields": {
+            "classification": 8,
+            "defect": 1,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.ModelClassification",
+        "pk": 8,
+        "fields": {
+            "file": 8,
+            "ml_model": 2,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00"
+        }
+    },
+    {
+        "model": "classif_ai.ModelClassificationDefect",
+        "pk": 8,
+        "fields": {
+            "classification": 8,
+            "defect": 1,
+            "created_ts":"2020-10-11 00:00:00+00:00",
+            "updated_ts":"2020-10-11 00:00:00+00:00",
+            "confidence":96.0
+        }
+    }
+]
